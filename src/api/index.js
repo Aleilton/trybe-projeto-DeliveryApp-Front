@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // const URL = 'http://localhost:3001';
 // const URL = 'http://192.168.1.76:3001';
-const URL = 'https://mysql-deploy-ton.herokuapp.com/';
+const URL = 'https://mysql-deploy-ton.herokuapp.com';
 
 export const fetchAllProducts = (token) => axios.get(`${URL}/products`,
   { headers: { authorization: `${token}` } });
